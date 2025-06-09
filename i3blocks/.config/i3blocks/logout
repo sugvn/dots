@@ -1,0 +1,6 @@
+
+case $BLOCK_BUTTON in
+    1)wlogout
+esac
+
+echo "| X |"

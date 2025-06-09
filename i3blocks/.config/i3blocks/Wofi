@@ -1,0 +1,12 @@
+
+
+
+echo " >> "
+
+case $BLOCK_BUTTON in
+    1)wifi.sh ;;
+    3)blueman-manager ;;
+esac
+
+
+

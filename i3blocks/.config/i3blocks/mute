@@ -1,0 +1,13 @@
+
+
+case $BLOCK_BUTTON in
+    1) pactl set-sink-mute @DEFAULT_SINK@ toggle ;;  # Left click: Mute/Unmute
+    3) pavucontrol & ;;  # Right click: Open Pavucontrol
+esac
+
+MUTED=$(pactl get-sink-mute @DEFAULT_SINK@ | awk '{print $2}')
+if [ "$MUTED" = "yes" ]; then
+     echo "[M] "
+else
+  echo " "
+fi
