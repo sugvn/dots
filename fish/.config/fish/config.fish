@@ -4,7 +4,17 @@ if status is-interactive
 end
 zoxide init fish --cmd cd| source
 
-# Enable dirty state indicator (*)
+# Soft clear screen in Foot terminal without erasing scrollback
+function clear-screen-keep-sb
+    for i in (seq (math $LINES - 2))
+        echo ''
+    end
+    tput cup 1 2
+end
+
+if string match -q 'foot*' $TERM
+    bind \cl 'clear-screen-keep-sb'
+end
 
 
 
