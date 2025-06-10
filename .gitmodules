@@ -1,0 +1,3 @@
+[submodule "nvim/.config/nvim"]
+	path = nvim/.config/nvim
+	url = hub:sugvn/make.nvim.git
