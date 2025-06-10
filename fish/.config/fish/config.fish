@@ -11,10 +11,13 @@ function clear-screen-keep-sb
     end
     tput cup 1 2
 end
-
 if string match -q 'foot*' $TERM
     bind \cl 'clear-screen-keep-sb'
 end
-
-
+function last_history_item
+    echo $history[1]
+end
+abbr --position anywhere -a "!!" --function last_history_item
+abbr --add tm tmux
+abbr --add vi nvim
 
