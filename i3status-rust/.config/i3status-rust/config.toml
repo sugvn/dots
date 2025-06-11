@@ -49,6 +49,12 @@ cmd = "foot -e impala"
 
 
 [[block]]
+block = "custom"
+command = "printf 'vpn:' && cat /tmp/wgstate"
+ watch_files=["/tmp/wgstate"]
+interval="once"
+
+[[block]]
 block = "bluetooth"
 adapter_mac = "3C:91:80:2D:16:BC"
 mac="50:6D:81:DE:35:1C"

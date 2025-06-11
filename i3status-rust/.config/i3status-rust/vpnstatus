@@ -1,0 +1,3 @@
+#!/bin/bash
+status=$(cat /tmp/wgstate 2>/dev/null || echo "Down")
+echo "vpn:$status"
