@@ -7,6 +7,6 @@
 </p>
 
 ```bash
-git clone https://github.com/yourusername/dotfiles.git ~/.dots
+git clone https://github.com/sugvn/dots.git ~/.dots
 cd ~/.dots
-stow *
+stow .
