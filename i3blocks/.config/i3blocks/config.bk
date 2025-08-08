@@ -1,8 +1,0 @@
-[time]
-command=date +"| %b %d | %I:%M %p |"
-interval= 15
-
-[volume]
-command=~/.config/i3blocks/volume.sh
-interval=once
-signal=10

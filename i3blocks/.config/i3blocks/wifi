@@ -1,8 +1,0 @@
-#!/bin/sh
-
-echo "| 󰤢 : $(cat /sys/class/net/wlan0/operstate)"
-
-case $BLOCK_BUTTON in
-	1)echo "| $(iwgetid -r)"
-	;;
-esac
