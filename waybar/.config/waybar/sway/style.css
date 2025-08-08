@@ -1,0 +1,97 @@
+
+/* === Catppuccin Mocha Palette === */
+@define-color base      #1e1e2e;
+@define-color surface0  #1a1b26;
+@define-color surface1  #45475a;
+@define-color surface2  #585b70;
+@define-color text      #cdd6f4;
+@define-color lavender  #b4befe;
+@define-color green     #a6e3a1;
+@define-color peach     #fab387;
+@define-color pink      #f5c2e7;
+@define-color yellow    #f9e2af;
+@define-color blue      #89b4fa;
+
+/* === Bar (Fully Transparent) === */
+window#waybar {
+  background-color: transparent;
+  color: @text;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+    transition-property:color,font-weight;
+    transition-duration:0.5s;
+}
+
+/* === Fonts & Base === */
+* {
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 11px;
+  border: none;
+  box-shadow: none;
+  min-height: 0;
+}
+
+/* === Workspaces (Compact Circle Dots) === */
+#workspaces {
+  background-color: @surface0;
+  border-radius: 10px;
+  padding: 2px 2px;
+  margin: 0 4px;
+}
+
+#workspaces button {
+  background-color: @surface2;
+    font-weight:bold;
+  padding: 1px 2px;
+  margin: 1px 3px;
+  border-radius: 40%;
+  transition: background-color 0.2s ease-in-out, padding 0.2s ease-in-out;
+
+}
+
+#workspaces button.focused {
+    padding-left:10px;
+    padding-right:10px;
+    border-radius: 8px;
+    background-color: @lavender;
+}
+
+#workspaces button.urgent {
+  color: @peach;
+}
+
+/* === Clock === */
+#clock {
+  background-color: @surface0;
+  color: @lavender;
+  padding: 3px 8px;
+  margin: 0 0;
+  border-radius: 8px;
+}
+
+/* === Right Modules === */
+#pulseaudio {
+  background-color: @yellow;
+  color: @base;
+  padding: 3px 8px;
+  margin: 0 3px;
+  border-radius: 8px;
+}
+
+#network {
+  background-color: @pink;
+  color: @base;
+  padding: 3px 7px;
+  margin: 0 3px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+#bluetooth {
+  background-color: @blue;
+  color: @base;
+  padding: 3px 8px;
+  margin: 0 6px 0 3px;
+  border-radius: 8px;
+}

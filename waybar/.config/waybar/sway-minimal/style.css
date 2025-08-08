@@ -1,0 +1,114 @@
+/* === Catppuccin Mocha Palette === */
+@define-color base #1e1e2e;
+@define-color surface0 #1a1b26;
+@define-color surface1 #45475a;
+@define-color surface2 #585b70;
+@define-color text #cdd6f4;
+@define-color lavender #b4befe;
+@define-color green #a6e3a1;
+@define-color peach #fab387;
+@define-color pink #f5c2e7;
+@define-color yellow #f9e2af;
+@define-color blue #89b4fa;
+
+/* === Bar (Fully Transparent) === */
+window#waybar {
+        background-color: black;
+        color: white;
+        border-radius: 0;
+        padding-right: 7px;
+        margin: 0;
+        border: 0;
+}
+
+/* === Fonts & Base === */
+* {
+        font-family: "JetBrainsMono Nerd Font", monospace;
+        font-size: 9px;
+        border: none;
+        box-shadow: none;
+        min-height: 0;
+}
+
+/* === Workspaces (Compact Circle Dots) === */
+#workspaces {
+        background-color: transparent;
+        border-radius: 0px;
+        margin: 0px;
+}
+
+#workspaces button {
+        background-color: #222222;
+        color: #999999;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 0px;
+        border: 1px solid #333333;
+        border-radius: 0px;
+        min-width: 0px;
+}
+
+#workspaces button.focused {
+        background-color: #285577;
+        color: white;
+        border-color: #4c88cc;
+        color: white;
+}
+
+#workspaces button.urgent {
+        color: @peach;
+}
+
+/* === Clock === */
+#clock {
+        background-color: transparent;
+        font-size: 10px;
+        color: white;
+        padding: 0;
+        margin: 0;
+        border-radius: 0px;
+}
+
+/* === Right Modules === */
+#pulseaudio {
+        background-color: transparent;
+        color: white;
+        padding: 0px;
+        margin-left: 3px;
+        margin-right: 3px;
+        border-radius: 0px;
+        font-size: 10px;
+        padding-left: 3px;
+        padding-right: 3px;
+}
+
+#network {
+        background-color: transparent;
+        color: white;
+        padding: 0;
+        margin: 0;
+        border-radius: 0px;
+        font-size: 10px;
+        padding-left: 3px;
+        padding-right: 3px;
+}
+
+#bluetooth {
+        background-color: transparent;
+        color: ghostwhite;
+        padding: 0px;
+        font-size: 13px;
+        margin-left: 3px;
+        margin-right:3px;
+        border-radius: 0px;
+        padding-left: 3px;
+        padding-right: 3px;
+}
+
+
+#tray {
+        margin-left: 3px;
+        margin-right: 3px;
+}
