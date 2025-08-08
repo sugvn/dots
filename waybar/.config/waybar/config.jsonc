@@ -1,0 +1,56 @@
+
+{
+  "layer": "top",
+  "position": "bottom",
+  "margin-top": 0,
+  "margin-left": 0,
+  "margin-right": 0,
+
+  "modules-left": ["sway/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["pulseaudio","bluetooth","tray"],
+
+    "sway/workspaces": {
+      "disable-scroll": true,
+      "format": "{icon}",
+      "on-click": "swaymsg workspace {name}"
+    },
+
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip": true,
+    "tooltip-format": "{:%A, %d %B %Y}"
+  },
+
+  "tray": {
+    "icon-size": 18,
+    "spacing": 3
+  },
+
+  "pulseaudio": {
+    "format": "  {volume}",
+    "format-muted": "   {volume}",
+    "tooltip": true,
+    "on-click":"pavucontrol"
+  },
+
+  "network": {
+    "format-wifi": "   ",
+    "tooltip-format": "SSID: {essid}\nSignal: {signalStrength}%",
+    "format-ethernet": " 󰈀 ",
+    "tooltip-format-ethernet": "Interface: {ifname}",
+    "format-disconnected": " 󰖪 ",
+    "tooltip-format-disconnected": "No connection",
+    "on-click":"foot -e impala"
+  },
+
+  "bluetooth": {
+    "format": "",
+    "format-connected":" {device_alias}",
+    "tooltip-format": "Device: {device_alias}",
+    "tooltip-format-off": "Bluetooth Off",
+    "tooltip-format-on": "Bluetooth On",
+    "tooltip-format-connected": "Connected: {device_alias}",
+    "on-click":"foot -e bluetui"
+  }
+}
