@@ -17,6 +17,7 @@ set $right l
 set $term foot
 # Your preferred application launcher
 # set $menu wmenu-run
+# set $menu "wmenu-run -p 'Run:' -N 050505 -n 888888 -M 050505 -m 999999 -S 83756a -s 000000 -f 'JetBrainsMono Nerd Font 12'"
 set $menu "wmenu-run -p 'Run:' -N 050505 -n 888888 -M 050505 -m 999999 -S 83756a -s 000000 -f 'JetBrainsMono Nerd Font 12'"
 # set $menu rofi -show drun 
 #set $menu wmenu-run
@@ -29,7 +30,7 @@ font pango:JetBrainsMono Nerd Font 6
 
 input * tap enabled
 
-output * bg ~/Pictures/Wallpapers/mountain.jpg fill
+output * bg ~/Pictures/Wallpapers/dv2.png fill
 
 
 default_border pixel 2
@@ -291,7 +292,7 @@ exec nm-applet --indicator &
 
 ##markkkkk
 
-exec swayidle -w timeout 150 'swaylock -e --daemonize' timeout 200 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' before-sleep 'swaylock -e --daemonize'
+exec swayidle -w timeout 300 'swaylock -e --daemonize' timeout 500 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' before-sleep 'swaylock -e --daemonize'
 
 # exec swayidle -w timeout 150 'swaylock' timeout 200 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' before-sleep 'swaylock'
 #exec sfwbar
