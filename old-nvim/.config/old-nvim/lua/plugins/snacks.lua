@@ -30,7 +30,7 @@ return {
     -- Top Pickers & Explorer
     {"<leader>y",function() Snacks.picker.zoxide({cwd="~/"}) end,desc="zoxide search"},
     -- { "<A-p>", function() Snacks.picker.smart({cwd="~/"}) end, desc = "Smart Find Files" },
-    { "<A-p>", function() Snacks.picker.smart({layout={preset="select"}}) end, desc = "Find Config File" },
+    { "<A-p>", function() Snacks.picker.smart({layout={preset="telescope"}}) end, desc = "Find Config File" },
     { "<leader>,", function() Snacks.picker.buffers() end, desc = "Buffers" },
     { "<leader>/", function() Snacks.picker.grep() end, desc = "Grep" },
     { "<leader>:", function() Snacks.picker.command_history() end, desc = "Command History" },
@@ -77,7 +77,7 @@ return {
     { "<leader>sq", function() Snacks.picker.qflist() end, desc = "Quickfix List" },
     { "<leader>sR", function() Snacks.picker.resume() end, desc = "Resume" },
     { "<leader>su", function() Snacks.picker.undo() end, desc = "Undo History" },
-    { "<leader>uC", function() Snacks.picker.colorschemes() end, desc = "Colorschemes" },
+    { "<leader>th", function() Snacks.picker.colorschemes() end, desc = "Colorschemes" },
     -- LSP
     { "gd", function() Snacks.picker.lsp_definitions() end, desc = "Goto Definition" },
     { "gD", function() Snacks.picker.lsp_declarations() end, desc = "Goto Declaration" },
