@@ -29,8 +29,11 @@ return {
   keys = {
     -- Top Pickers & Explorer
     {"<leader>y",function() Snacks.picker.zoxide({cwd="~/"}) end,desc="zoxide search"},
+        {"<A-p>",function ()
+            Snacks.picker.files()
+        end},
     -- { "<A-p>", function() Snacks.picker.smart({cwd="~/"}) end, desc = "Smart Find Files" },
-    { "<A-p>", function() Snacks.picker.smart({layout={preset="telescope"}}) end, desc = "Find Config File" },
+    { "<leader>ff", function() Snacks.picker.smart({cwd="~/",layout={preset="telescope"}}) end, desc = "Find Config File" },
     { "<leader>,", function() Snacks.picker.buffers() end, desc = "Buffers" },
     { "<leader>/", function() Snacks.picker.grep() end, desc = "Grep" },
     { "<leader>:", function() Snacks.picker.command_history() end, desc = "Command History" },
