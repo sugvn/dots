@@ -30,7 +30,7 @@ font pango:JetBrainsMono Nerd Font 6
 
 input * tap enabled
 
-output * bg ~/Pictures/Wallpapers/mountain-bliss.jpg fill
+output * bg ~/Pictures/Wallpapers/simple-black.png fill
 
 
 default_border pixel 2
