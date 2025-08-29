@@ -17,6 +17,8 @@ end, { desc = "Toggle number" })
 
 map('n','gll',vim.diagnostic.open_float)
 
+map("n","<leader>fm",vim.lsp.buf.format)
+
 --oil
 map('n','\\',"<CMD>Oil --float<CR>",{})
 map('n','<leader>o',"<CMD>Oil --float<CR>",{})
