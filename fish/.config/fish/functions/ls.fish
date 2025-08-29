@@ -1,4 +1,4 @@
-function ls --wraps=lsd --description 'alias ls=lsd'
-  lsd $argv
+function ls --wraps=lsd --wraps='eza --icons always' --description 'alias ls=eza --icons always'
+  eza --icons always $argv
         
 end
