@@ -30,7 +30,7 @@ font pango:JetBrainsMono Nerd Font 6
 
 input * tap enabled
 
-output * bg ~/Pictures/Wallpapers/simple-black.png fill
+output * bg ~/Pictures/Wallpapers/hotd.jpg fill
 
 
 default_border pixel 2
@@ -115,6 +115,11 @@ gaps outer 0
 
     # Start your launcher
     bindsym $mod+p exec $menu
+
+
+        #open btop
+        bindsym $mod+t exec "foot -e btop"
+
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
@@ -249,7 +254,7 @@ bindsym $mod+r mode "resize"
 #
 set $screenshot 1 selected, 2 whole, 3 selected clipboard, 4 whole clipboard, 5 swappy
 mode "$screenshot" {
-    bindsym 1 exec 'grim -g "$(slurp)" ~/ps_$(date +"%Y%m%d%H%M%S").png', mode "default"
+    bindsym 1 exec 'grim -g "$(slurp)" ~/Pictures/Screenshots/ps_$(date +"%Y%m%d%H%M%S").png', mode "default"
     bindsym 2 exec 'grim ~/ps_$(date +"%Y%m%d%H%M%S").png', mode "default"
     bindsym 3 exec 'grim -g "$(slurp)" - | wl-copy', mode "default"
     bindsym 4 exec 'grim - | wl-copy', mode "default"
